@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Job Application Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>AI Job Application Assistant</h1>
+
+<textarea id="resume" placeholder="Paste Resume"></textarea>
+<textarea id="job_description" placeholder="Paste Job Description"></textarea>
+
+<select id="tone">
+    <option value="professional">Professional</option>
+    <option value="friendly">Friendly</option>
+</select>
+
+<div>
+<button onclick="generateCover()">Generate Cover Letter</button>
+<button onclick="analyzeResume()">Analyze Resume</button>
+<button onclick="checkATS()">Check ATS Score</button>
+<button onclick="careerAdvice()">Career Advice</button>
+</div>
+
+<pre id="output"></pre>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
